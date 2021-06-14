@@ -1,0 +1,20 @@
+
+print("Escriba el año para calcular si es bisiesto o no...")
+año=0
+año=int(input())
+
+def escribirAño():
+    print("El año que ha seleccionado es= ",año)
+
+def bisiestoNobisiesto(año):
+    if año%4==0:
+        print("Año bisiesto")
+    elif (año%100==0)and(año%400!=0):
+        print("Año no bisiesto")
+    elif (año%100==0)and(año%4==0):
+        print("Año bisiesto")
+    else:
+        print("Año no bisiesto")
+escribirAño()
+print()
+bisiestoNobisiesto(año)
